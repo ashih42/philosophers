@@ -1,0 +1,3 @@
+say -v Samantha -r 180 "Now, it is time... To DAH~AH~AH~AH~AH~AH~AH~ANCE" -o dance
+
+say -v Samantha -r 160 "Someone died~did" -o died

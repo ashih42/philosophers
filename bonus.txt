@@ -1,0 +1,15 @@
+- Supports input number of philosophers!
+
+- Wonderful UML state diagram!
+
+- You can choose health-text OR health-bar, so many options!
+
+- Have console log, SDL2 visualizer, and sounds!  What a rich multi-media experience!
+
+- Such high quality variety textures!
+
+- Randomized sprites in each session!
+
+- Emergent scheduling: Every other philosopher takes opposite turns in eating/thinking alternately!
+
+- BAD END scenario in case someone dieded!
