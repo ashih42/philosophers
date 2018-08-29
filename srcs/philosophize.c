@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philosophize.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ashih <ashih@student.42.fr>                +#+  +:+       +#+        */
+/*   By: apuel <apuel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/22 17:01:03 by ashih             #+#    #+#             */
-/*   Updated: 2018/08/26 21:55:43 by ashih            ###   ########.fr       */
+/*   Updated: 2018/08/28 18:57:19 by apuel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ static void	eat(t_philo *philo)
 	}
 	philo->health = MAX_LIFE;
 	philo->need_to_eat = false;
+	if (g_sim_state != SIM_STATE_NORMAL)
+		return ;
 	release_wands(philo);
 	rest(philo);
 }
@@ -78,6 +80,8 @@ static void	think(t_philo *philo)
 		usleep(1000000);
 	}
 	philo->need_to_eat = true;
+	if (g_sim_state != SIM_STATE_NORMAL)
+		return ;
 	rest(philo);
 }
 
