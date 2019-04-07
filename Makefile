@@ -52,22 +52,7 @@ SRCDIR := srcs/
 OBJDIR := objs/
 OBJS := $(addprefix $(OBJDIR), $(SRCS:.c=.o))
 
-all: sdl2 sdl2_image sdl2_ttf $(LIBFT_LIB) $(TARGET)
-
-sdl2:
-	@echo "\x1b[1mInstalling SDL2 library...\x1b[0m"
-	@HOMEBREW_NO_AUTO_UPDATE=1 brew install sdl2
-	@echo
-
-sdl2_image:
-	@echo "\x1b[1mInstalling SDL2 Image library...\x1b[0m"
-	@HOMEBREW_NO_AUTO_UPDATE=1 brew install sdl2_image
-	@echo
-
-sdl2_ttf:
-	@echo "\x1b[1mInstalling SDL2 TTF library...\x1b[0m"
-	@HOMEBREW_NO_AUTO_UPDATE=1 brew install sdl2_ttf
-	@echo
+all: $(LIBFT_LIB) $(TARGET)
 
 $(LIBFT_LIB):
 	@echo "\x1b[1mBuilding $(LIBFT) library...\x1b[0m"
@@ -100,4 +85,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re sdl2 sdl2_image sdl2_ttf
+.PHONY: all clean fclean re

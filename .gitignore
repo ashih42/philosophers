@@ -1,6 +1,5 @@
+.DS_Store
 ._*
 *.o
 *.a
-*.pdf
 philo
-.DS_Store
