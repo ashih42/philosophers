@@ -1,5 +1,5 @@
 # philosophers
-My solution for the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem). (42 Silicon Valley)
+My solution for the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) in C using [SDL2](https://www.libsdl.org/download-2.0.php). (42 Silicon Valley)
 
 ![philosophers](https://github.com/ashih42/philo/blob/master/Screenshots/philo.png)
 
