@@ -1,7 +1,9 @@
 # philosophers
 My solution for the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) in C using [SDL2](https://www.libsdl.org/download-2.0.php). (42 Silicon Valley)
 
-![philosophers](https://github.com/ashih42/philo/blob/master/Screenshots/philo.png)
+<p float="left">
+  <img src="https://github.com/ashih42/philo/blob/master/Screenshots/philo.png" width="540" />
+</p>
 
 * All even-numbered philosophers will eat, sleep, think, sleep, ...
 * All odd-numbered philosophers will think, sleep, eat, sleep, ...
